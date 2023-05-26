@@ -250,3 +250,54 @@ span {
     font-weight: bold;
     color: white;
 }
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .popup-content {
+    position: relative;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: black !important;
+  }
+  
+  .popup-text {
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .confirm-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup-image {
+    width: 200px;  /* Tamaño deseado */
+    height: 200px; /* Tamaño deseado */
+  }
+
+  #popupContainer img {
+    width: 265px;  /* Tamaño deseado */
+    height: 205px; /* Tamaño deseado */
+  }
