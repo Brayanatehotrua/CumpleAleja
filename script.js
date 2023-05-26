@@ -72,3 +72,25 @@ function getContrastColor(backgroundColor) {
      // Añade un cero al frente si el número es menor que 10
      return number < 10 ? '0' + number : number;
  }
+
+ document.addEventListener('DOMContentLoaded', function() {
+    var popupContainer = document.getElementById('popupContainer');
+    var closeButton = document.querySelector('.closeButton');
+    var confirmButton = document.querySelector('.confirm-button');
+  
+    closeButton.addEventListener('click', function() {
+      popupContainer.style.display = 'none';
+    });
+  
+    confirmButton.addEventListener('click', function() {
+      // Lógica para confirmar asistencia
+    });
+  
+    popupContainer.style.display = 'block';
+  
+    window.addEventListener('click', function(event) {
+      if (event.target === popupContainer) {
+        popupContainer.style.display = 'none';
+      }
+    });
+  });
